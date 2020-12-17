@@ -9,7 +9,7 @@
 
 <body bgcolor="green" leftmargin=120px rightmargin=120px topmargin=25px align="center">
 
-  <h1>Výpočet obsahu a obvodu obdélníka</h1>
+  <h1>Výpočet obsahu a obvodu obdelníku</h1>
 
   <font size="3">
   <nav>
@@ -23,7 +23,9 @@
   </ul></nav>
 
   <hr size="20" color="grey">
-
+  
+  <p><img src="{{ url_for('static', filename='th.jpeg') }}" width="120" height="120" /></p>
+  
   <form method="get">
     <input type="text" name="a" value="{{request.args.get('a') or ''}}" placeholder="délka strany 'a'" />
     <input type="text" name="b" value="{{request.args.get('b') or ''}}" placeholder="délka strany 'b'" />

@@ -24,6 +24,8 @@
 
   <hr size="20" color="grey">
 
+  <p><img src="{{ url_for('static', filename='ctverec.jpg') }}" width="120" height="120" /></p>
+
   <form method="get">
     <input type="text" name="a" value="{{request.args.get('a') or ''}}" placeholder="délka strany 'a'" />
     <input type="submit" value="výsledek" />
